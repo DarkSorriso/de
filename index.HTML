@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>album de familia </title>
+ </head>
+ <body>
+   <h1>Meu Álbum de familia</h1>
+
+   <img src="https://i.postimg.cc/MKdhy06Z/fanily.jpg"
+   style="width: 30%;" id="familyMemberImage">
+
+   <h4 id="familyMemberName"></h4>
+
+   <button onclick="update();"></button>
+   var images=
+   ["https://i.postimg.cc/MKdh06Z/family.jpg","https://i.postimg.cc/L6HcYQM0/grand.father.png"],"https://i.postimg.cc/wjMnFtMX.jpg","https://i.postimg.cc/5ymDKL83/bro.jpg","https://i.postimg.cc/JnL6wtrd/sister.jpg","https://i.postimg.cc/b5W5zSK/mother.jpg"];
+
+   var names=["Álbum de Família","Rodrigo Silva","Diego Silva","roberto silva","Aline silva","Sonia Silva"];
+
+   var i=0
+   function update()
+   {
+
+      i++;
+      var numbersOfFamiliyMemberInArray = 5
+      if(i > numbersOfFamiliyMemberInArray)
+   {
+      i=0;
+   }
+var updatedImage= images[i];
+var updatedName= names[i];
+document.getElementbyId("familyMember.Image").src=updatedImage;
+document.getElementById("FamilyMemberName").innerHTML= updatedName;
+}
+ </body>
+    </html>
